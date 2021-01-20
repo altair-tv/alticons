@@ -1,0 +1,11 @@
+build
+coverage
+dist
+node_modules
+package-lock.json
+public
+.cache
+.DS_Store
+.idea
+.rts2_cache*
+.vscode
