@@ -12,5 +12,7 @@
       "message": "Release: %s"
     }
   },
-  "packages": ["packages/*"]
+  "packages": [
+    "packages/*"
+  ]
 }
