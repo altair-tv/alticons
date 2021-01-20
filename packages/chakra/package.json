@@ -1,5 +1,5 @@
 {
-  "name": "@altair-tv/alticons",
+  "name": "@altair-tv/alticons-chakra",
   "version": "0.1.0",
   "description": "A set of icons crafted with love by Altair.",
   "main": "dist/index.js",
@@ -7,9 +7,8 @@
   "author": "Altair Interactive, Inc. <github@altair.tv>",
   "license": "MIT",
   "scripts": {
-    "build": "node script/build.js && node script/types.js",
-    "prepare": "yarn build && microbundle --no-compress",
-    "watch": "microbundle watch --no-compress"
+    "prepare": "microbundle --no-compress --jsx React.createElement",
+    "watch": "microbundle watch --no-compress --jsx React.createElement"
   },
   "devDependencies": {
     "@chakra-ui/icon": "^1.0.3",
@@ -21,5 +20,8 @@
   },
   "peerDependencies": {
     "react": ">=17"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
